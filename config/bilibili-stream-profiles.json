@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "planned_not_integrated_or_deployed",
+  "hardware_validated": false,
+  "video_codec": "mjpeg",
+  "transport_candidate": "http_flv_with_espressif_mjpeg_compatibility_patch",
+  "resolutions": [
+    {
+      "id": "standard",
+      "label_zh": "标清",
+      "width": 320,
+      "height": 180,
+      "target_fps": 20,
+      "recommended_video_bitrate_kbps": 1800
+    },
+    {
+      "id": "clear",
+      "label_zh": "清晰",
+      "width": 480,
+      "height": 270,
+      "target_fps": 15,
+      "recommended_video_bitrate_kbps": 2500
+    }
+  ],
+  "bitrate_selector": {
+    "independent_of_resolution": true,
+    "automatic_option": true,
+    "video_target_kbps": [800, 1200, 1800, 2500, 3500],
+    "unit": "decimal_kbit_per_second",
+    "semantics": "Target average video bitrate, not strict CBR; audio and transport overhead are additional.",
+    "show_measured_total_bitrate": true
+  },
+  "audio_candidate": {
+    "codec": "pcm_s16le",
+    "sample_rate_hz": 22050,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "bitrate_kbps": 352.8
+  },
+  "network_budget": {
+    "server_egress_limit_kbps": 5000,
+    "estimated_transport_overhead_ratio": 0.1,
+    "planned_total_ceiling_kbps": 4250,
+    "automatic_headroom_ratio": 0.2,
+    "note": "Budget only; shared server traffic, actual JPEG sizes, and Wi-Fi/TLS performance must be measured."
+  },
+  "defaults": {
+    "resolution": "standard",
+    "bitrate_mode": "automatic"
+  },
+  "switching_plan": {
+    "preserve_source_position": true,
+    "restart_transcode_with_new_session": true,
+    "discard_old_session_packets": true
+  },
+  "validation_note": "FPS, network playback, PCM/FLV compatibility, automatic bitrate control, and seamless switching are development targets, not measured firmware capabilities. The accepted v22 local player is unchanged."
+}

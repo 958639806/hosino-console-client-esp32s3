@@ -1,0 +1,6 @@
+{
+  "component": "espressif/gmf_audio",
+  "version": "1.1.0",
+  "registry_url": "https://components.espressif.com/components/espressif/gmf_audio/versions/1.1.0/readme",
+  "archive_sha256": "aaa14733d6c77619bf8938a28d7b6c555ca38628a8c17ce0e72e5339e24a331a"
+}

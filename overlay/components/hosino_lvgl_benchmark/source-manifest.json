@@ -1,0 +1,33 @@
+{
+  "upstream": "https://github.com/lvgl/lvgl/tree/v9.4.0/demos/benchmark",
+  "version": "9.4.0",
+  "license": "MIT",
+  "scenes": 15,
+  "omitted_scene": "Widgets demo (original scene 16)",
+  "upstream_files": [
+    {
+      "file": "demos/benchmark/lv_demo_benchmark.c",
+      "sha256": "ac51bd64f264edf87f9d728bf7b908d7335c5b12651cf1ba114b093be9cc44be"
+    },
+    {
+      "file": "demos/benchmark/assets/img_benchmark_avatar.c",
+      "sha256": "8c8465843a9201c3553137d188842b8c9d30f782dbab9d0696e7e5e308383220"
+    },
+    {
+      "file": "demos/benchmark/assets/img_benchmark_lvgl_logo_argb.c",
+      "sha256": "a867c91e1179969e07b5a0e460861ca808a3125785f2816b58b839633d8cf385"
+    },
+    {
+      "file": "demos/benchmark/assets/img_benchmark_lvgl_logo_rgb.c",
+      "sha256": "b5837035a968a7c084e84c388f892c98626e63cf2d0971ba7b72ac7aa1da33ce"
+    },
+    {
+      "file": "LICENCE.txt",
+      "sha256": "27a80bd36832ab42d35ad60c08b2b230a807a9bc0d58e94ec1531543dc49cbe8"
+    }
+  ],
+  "derived_portengine_sha256": "e13eb103b7e5fb873abdb7b1f074c2b0d580e69d29e1f4d693cb6204a9b15da2",
+  "patch_sha256": "52c760a6f0f86d326d407d929f0ae1c03e2c4a5f5e55fa6f2765251a2604e98e",
+  "source_kind": "Pinned local lvgl/lvgl 9.4.0 component already used by the firmware",
+  "measurement": "Completed display-update count / actual elapsed time; not original LVGL sysmon score"
+}

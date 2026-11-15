@@ -1,0 +1,17 @@
+{
+  "component": "espressif/esp_extractor",
+  "version": "1.0.7",
+  "component_hash": "d2e99ae3e45f2d3b0b35d5615e0ef32d5b813daed6f79253aab94b6e76445086",
+  "component_content_verified": true,
+  "registry_version_url": "https://components.espressif.com/components/espressif/esp_extractor/versions/1.0.7",
+  "source_repository": "git://github.com/espressif/esp-adf-libs.git",
+  "repository_info": {
+    "commit_sha": "b0131096a20d347e882ea284430d08278541e9d7",
+    "path": "esp_extractor"
+  },
+  "upstream_url": "https://github.com/espressif/esp-adf-libs/tree/master/esp_extractor",
+  "license_sha256": "bcb685b8ddb3bcd53ae5a617024efa11236c68f43207c42aa51e84603c591cbc",
+  "manifest_sha256": "bc0b97b2cfa20f847050f477492a28659b3e22934e50e6bad2d4e5d566f98bfb",
+  "firmware_dependency_lock": "firmware/apps/80mhz/dependencies.lock",
+  "firmware_dependency_lock_sha256": "926d9d87d5a50d54c8abe46c221328ebc23cc20a98750ef7a7ed449fb749f0f7"
+}

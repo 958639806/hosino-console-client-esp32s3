@@ -1,0 +1,55 @@
+{
+  "repository": "https://github.com/bitbank2/JPEGDEC",
+  "commit": "32132971bcc032b5b14f1e1e968c242d8d986854",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "path": "LICENSE",
+      "upstream_git_blob_sha": "326e04a2c8a8b555a6ee1b7d646d75a89611e2aa",
+      "locally_patched": false,
+      "sha256": "16b742c2110129c89df82164a28dbecb7ca1fe100c75c30e5c506f050c0c6de5"
+    },
+    {
+      "path": "README.md",
+      "upstream_git_blob_sha": "33520aa5fb18f9d0ef63e42d25cd79d84a0fb5dc",
+      "locally_patched": false,
+      "sha256": "dd447fbe7b7ff2367746f48ab09c949aaa50647476c00f83e91a0407306e330e"
+    },
+    {
+      "path": "src/JPEGDEC.cpp",
+      "upstream_git_blob_sha": "bdc0ca5f246ea73741011e4c84ebb0993f4dd735",
+      "locally_patched": false,
+      "sha256": "3973a742b2d346b5f63ecd0cf063130c86f109ed16337ed4df621ca613aaf7a8"
+    },
+    {
+      "path": "src/JPEGDEC.h",
+      "upstream_git_blob_sha": "fcb1931fd1ee2ac0745d69c2d680a8bf5ef8a41d",
+      "locally_patched": false,
+      "sha256": "8275205e4c5dfc63549ea86a7fed0011baebd2007de920ae29b646909105389f"
+    },
+    {
+      "path": "src/jpeg.inl",
+      "upstream_git_blob_sha": "0d61af9b55fe94017d3bdabf2c2251546b0e2a9c",
+      "locally_patched": true,
+      "sha256": "d0d1b2a5eb23c2801bed4419d3d9dc94fd8cd41d698529df30bed9ce12d76a68"
+    },
+    {
+      "path": "src/s3_simd_420.S",
+      "upstream_git_blob_sha": "7fadd554597f66f70f9221573b2e826c8e5113a5",
+      "locally_patched": true,
+      "sha256": "7a424ab2cc4d4fd62207417fca939308d51d52451b42794338d36d797c6435b2"
+    },
+    {
+      "path": "src/s3_simd_444.S",
+      "upstream_git_blob_sha": "b619f1476f1c1f3e1925d5c0fef6fe117f7c2b4d",
+      "locally_patched": true,
+      "sha256": "35a01562743458d5b1eb53380c6c789cfef4b07174d98152c50b3ae198fde114"
+    },
+    {
+      "path": "src/s3_simd_dequant.S",
+      "upstream_git_blob_sha": "becabef132e1c4620100a9d6a52be85e90d49da0",
+      "locally_patched": true,
+      "sha256": "a7a23032535a0943d36d93609145f95b5824ec5da5e5f1a3c976d7f994132d87"
+    }
+  ]
+}

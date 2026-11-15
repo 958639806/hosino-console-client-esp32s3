@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "kind": "Actual production C host tests + generated LVGL bitmap coverage/layout; no device visual acceptance",
+  "host_test_output": "PASS 141 display-copy/UTF-8/capacity checks; original source is never modified",
+  "symbol_glyphs_checked": 7749,
+  "sample_bitmap_coverage": [
+    {
+      "text": "(๑•̀ㅂ•́)و✧",
+      "all_codepoints_available": true
+    },
+    {
+      "text": "(╯°□°）╯︵ ┻━┻",
+      "all_codepoints_available": true
+    },
+    {
+      "text": "ಠ_ಠ",
+      "all_codepoints_available": true
+    },
+    {
+      "text": "ಥ_ಥ ง ლ",
+      "all_codepoints_available": true
+    },
+    {
+      "text": "ʕ•ᴥ•ʔ",
+      "all_codepoints_available": true
+    },
+    {
+      "text": "😭😂🥰👍❤️🎉🚀",
+      "all_codepoints_available": true
+    },
+    {
+      "text": "(≧▽≦) (´･ω･`) Σ(ﾟДﾟ) ☆⌒ヽ(*'､^*)",
+      "all_codepoints_available": true
+    },
+    {
+      "text": "Привет Ελληνικά かな カナ",
+      "all_codepoints_available": true
+    }
+  ],
+  "all_supplemental_glyphs_fit_18px": true,
+  "source_sha256": {
+    "hosino_chat_font_16.c": "6842ef1bfa82f265def0029781852f1c42da434806614a420b8725252514b524",
+    "hosino_chat_symbols_16.c": "cabae066c3555a56d26a84e437f59953f92f616e118b55e53184bfa26d8010fe",
+    "hosino_chat_display.c": "2e908259f88985b37e195aa31eae014d6944db7d4631323c4c155e92a58ae573",
+    "hosino_chat_display.h": "0ef40d953753ef04b41931f7c5094e4dc0d4ce8871bc6a098b169d0df73ad76e"
+  },
+  "preview": "glyph-preview.png",
+  "not_validated": [
+    "device rendering",
+    "combined emoji shaping",
+    "whole firmware link"
+  ]
+}

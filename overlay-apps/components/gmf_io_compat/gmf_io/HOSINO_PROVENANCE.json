@@ -1,0 +1,44 @@
+{
+  "component": "espressif/gmf_io",
+  "version": "1.1.0",
+  "source_commit": "17ce627cd547d94acfc14890807dbccdc8b459c6",
+  "source_path": "elements/gmf_io",
+  "registry_source": "upstream/esp-player-registry-v1.1.1/gmf_io/REGISTRY_SOURCE.json",
+  "upstream_license_sha256": "32395cf1ed0b65a896c6cdd93ba06ea08e5ef2349ea80b155bb1699af61efd30",
+  "local_license_sha256": "32395cf1ed0b65a896c6cdd93ba06ea08e5ef2349ea80b155bb1699af61efd30",
+  "modified_files": [
+    {
+      "path": "idf_component.yml",
+      "source_sha256": "1f1737e7d3e157ebb5f3255ad07c5e5b518b3636c16755ff53c64a1378bb2119",
+      "local_sha256": "289156ea5f44380575cff28d9dabc16dc2dca9ae4d283b398c6d125ac62dd839"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "source_sha256": "cb5353dd4c5b9bfbb48991f625e61ba94a8d9df7f5f9b810a2502b3b58a54244",
+      "local_sha256": "515ea47c2ce91991fec08b9e50acd8a7933f4dfdb0423b7817e1c0c6a395ac71"
+    },
+    {
+      "path": "esp_gmf_io_file.c",
+      "source_sha256": "b73d1597a4c5eea269af7310f2e0b8215eafa0aa6c933b6cbfd72a11f8cee7a8",
+      "local_sha256": "99d5a8d44fc41d9297c2beb62439eae19e489c78223d7c126f2d2045b9b57786"
+    }
+  ],
+  "added_files": [
+    {
+      "path": "include/hosino_file_diagnostics.h",
+      "local_sha256": "457c879384764281366c8fddaa01e95dea794185e30b99879fcab667cc505f7e"
+    }
+  ],
+  "scope": [
+    "Retain codec_dev1.5.11 manifest compatibility pin.",
+    "Add only video-session-scoped stdio fread/fseek elapsed wall timing and optional weak hooks; no ESP Player dependency.",
+    "Only reader exact mounted path is bound at successful fopen; token0 disables timing. Strong provider must invalidate stale generation tokens.",
+    "Each fread preserves returned byte count, EOF/error indicators and errno. Each fseek preserves result and errno.",
+    "Apps v15: configure explicit file cache before initial seek; close before freeing cache on partial-open errors; distinguish second-read failure from EOF. No clock or task changes."
+  ],
+  "validation": {
+    "xtensa_syntax": "passed with esp_timer include required by the new private CMake dependency",
+    "full_build": "pending v15",
+    "device_test": "pending v15"
+  }
+}

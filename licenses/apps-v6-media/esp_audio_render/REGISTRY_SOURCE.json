@@ -1,0 +1,7 @@
+{
+  "component": "espressif/esp_audio_render",
+  "version": "1.1.0",
+  "registry_url": "https://components.espressif.com/components/espressif/esp_audio_render/versions/1.1.0/readme",
+  "download_url": "https://components-file.espressif.com/components/espressif/esp_audio_render/1.1.0/download/24d64e48-1d0b-44c7-90a9-343adf3c4573.zip",
+  "archive_sha256": "e11779c46a0bd5a7f214adc6a0569bf21c3e6e08bcbbbd7e432c2b5d12db2868"
+}

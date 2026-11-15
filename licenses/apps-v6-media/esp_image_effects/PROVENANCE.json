@@ -1,0 +1,17 @@
+{
+  "component": "espressif/esp_image_effects",
+  "version": "1.2.0",
+  "component_hash": "7f605dcd1ebe56ce4adb76cfb1326d6e25e9455d15d60c547397a85929ba1228",
+  "component_content_verified": true,
+  "registry_version_url": "https://components.espressif.com/components/espressif/esp_image_effects/versions/1.2.0",
+  "source_repository": "git://github.com/espressif/esp-adf-libs.git",
+  "repository_info": {
+    "commit_sha": "e866d4542005815d29d183d33e17b07c447840a1",
+    "path": "esp_image_effects"
+  },
+  "upstream_url": "https://github.com/espressif/esp-adf-libs/tree/master/esp_image_effects",
+  "license_sha256": "18f5b91101b93b6140ae0cc23bd420d0c6f9279b7266b72e60e7c380a44e1222",
+  "manifest_sha256": "ebef5e5855119f8892b81750d35c06d2c41d59c22f363ba51926f50e2e22cd1f",
+  "firmware_dependency_lock": "firmware/apps/80mhz/dependencies.lock",
+  "firmware_dependency_lock_sha256": "926d9d87d5a50d54c8abe46c221328ebc23cc20a98750ef7a7ed449fb749f0f7"
+}

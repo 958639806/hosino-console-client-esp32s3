@@ -1,0 +1,18 @@
+{
+  "fatfs_source": "D:\\PC\\文档\\ChatGPT\\esp32星野\\overlay-apps\\components\\fatfs\\src",
+  "sdkconfig": "C:\\esp\\hosino-qspi\\build-apps-80\\config\\sdkconfig.h",
+  "source_sha256": {
+    "ff.c": "3973d560085df1d27381e4f3281ed174ea22bda2301912bca41574863febd749",
+    "ff.h": "a4b531fde646e638c14ccbcee6b47164d54c2e9b11ab27e0dcfd29e49a628765",
+    "ffconf.h": "21215cccf3f78a968b6158e73e74d6e488b288d722414df4ad9f8c1a30108c46",
+    "ffunicode.c": "892b9a0f4e4c4c4525000dae8fac012c784f1183de53753632959a36b28bdfdf",
+    "diskio.h": "c8e4cda34fc44cd7398e6d52d205eb77793c4b33a2ca3efec6212d43088faa6f"
+  },
+  "test_ffconf_sha256": "21215cccf3f78a968b6158e73e74d6e488b288d722414df4ad9f8c1a30108c46",
+  "compiler": "D:\\PC\\文档\\ChatGPT\\esp32星野\\tests\\fatfs_dual_format\\.tools\\tcc-0.9.27\\tcc\\tcc.exe",
+  "compiler_archive_sha256": "34a721949a2583fdff725312da092fa0f5f1f284b702e6f811c6954714faabb2",
+  "exit_code": 0,
+  "stdout": "CONFIG EXFAT=1 LBA64=0 LFN=3 UTF8=2 CP=936 FSIZE=8 LBA=4\nPASS format=FAT32 volume_MiB=64 cluster_bytes=512 payload=1051150 crc32=2fbe48e1 sparse_RAM_bytes=1089536\nPASS format=exFAT volume_MiB=64 cluster_bytes=4096 payload=1051150 crc32=2fbe48e1 sparse_RAM_bytes=1097728\nPASS format=FAT32 volume_MiB=131072 cluster_bytes=32768 payload=1051150 crc32=2fbe48e1 sparse_RAM_bytes=1081344\nPASS format=exFAT volume_MiB=131072 cluster_bytes=131072 payload=1051150 crc32=2fbe48e1 sparse_RAM_bytes=1097728\nPASS all four cases; peak simultaneous LFN allocations=2; no physical disk APIs\n",
+  "stderr": "",
+  "scope": "FatFs core, sparse RAM media, Windows mutex hooks; excludes ESP VFS/SDMMC/hardware"
+}

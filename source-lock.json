@@ -1,0 +1,19 @@
+{
+  "board": "ESP32-S3-Touch-AMOLED-2.16",
+  "upstream_repository": "https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.16.git",
+  "upstream_commit": "225a62bff11b5d0a0b607873860d39485a9a9685",
+  "upstream_project": "examples/esp-idf/03_esp-brookesia",
+  "idf_version": "v5.5.5",
+  "idf_commit": "b774170ff46c393eeb5e495ea37936038d3f4f4f",
+  "bsp_version": "2.0.1",
+  "co5300_driver_version": "2.2.0",
+  "factory_recovery": {
+    "filename": "ESP32-S3-Touch-AMOLED-2.16-FactoryOnly-260318.bin",
+    "size": 15859712,
+    "git_blob_sha1": "3b9492fb6ba5819363912320bbefc1a128aaca5c",
+    "sha256": "b6c403e95c6e53eb5417f3e23a0be2e6266734896962bbba1b9906ff1b67762b",
+    "flash_offset": "0x0",
+    "note": "Official published recovery image; not a backup of the user's physical board or its settings"
+  },
+  "purpose": "Chinese Brookesia multi-application desktop firmware; preview qspi-apps-23 network receive-window revision"
+}

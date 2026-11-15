@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "kind": "Host UTF-8/codepoint coverage and static-font checks; no visual/device acceptance",
+  "font_c_sha256": "6842ef1bfa82f265def0029781852f1c42da434806614a420b8725252514b524",
+  "gb2312_covered": 6763,
+  "pinyin_entries_checked": 321,
+  "representative_texts": [
+    {
+      "text": "你好，星野！请查看今天的会话状态、模型用量和网络连接。",
+      "pass": true
+    },
+    {
+      "text": "对话与管理：登录、发送、停止、刷新、取消。中文输入和拼音候选。",
+      "pass": true
+    },
+    {
+      "text": "请先登录。正在连接服务器……返回主页不会重复发送消息。",
+      "pass": true
+    },
+    {
+      "text": "GB2312：一龠，100% OK! HTTPS / TLS 1.2",
+      "pass": true
+    }
+  ],
+  "all_pinyin_candidate_strings_covered": true,
+  "fallback_ascii16": true,
+  "uncompressed_2bpp": true,
+  "no_font_heap_copy": true
+}

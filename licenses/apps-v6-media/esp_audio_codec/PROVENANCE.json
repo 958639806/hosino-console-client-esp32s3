@@ -1,0 +1,17 @@
+{
+  "component": "espressif/esp_audio_codec",
+  "version": "2.6.2",
+  "component_hash": "a5b9275af74247e3ce536d16a7080e4d77207a185b63e1bea368eb4d57176c2b",
+  "component_content_verified": true,
+  "registry_version_url": "https://components.espressif.com/components/espressif/esp_audio_codec/versions/2.6.2",
+  "source_repository": "git://github.com/espressif/esp-adf-libs.git",
+  "repository_info": {
+    "commit_sha": "f9110cbb471b4017b0faf9bd48fcac84c61ecb6d",
+    "path": "esp_audio_codec"
+  },
+  "upstream_url": "https://github.com/espressif/esp-adf-libs/tree/master/esp_audio_codec",
+  "license_sha256": "f9af95d73bd683a810ed8dc655b2af91258852934ba8e687ddcfaaf54ff2d755",
+  "manifest_sha256": "5f3ef73c6c4756792b3793e229901f85632e4a5a5e839804952b6a6dc6f480e8",
+  "firmware_dependency_lock": "firmware/apps/80mhz/dependencies.lock",
+  "firmware_dependency_lock_sha256": "926d9d87d5a50d54c8abe46c221328ebc23cc20a98750ef7a7ed449fb749f0f7"
+}

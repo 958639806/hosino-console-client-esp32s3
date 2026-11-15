@@ -1,0 +1,18 @@
+{
+  "component": "espressif/esp_video_render",
+  "version": "1.1.0",
+  "component_hash": "e9aad0fac76431cca92dfaf231a26b06286aa7adfc34fa73f997621f1b9424f4",
+  "component_content_verified": true,
+  "registry_version_url": "https://components.espressif.com/components/espressif/esp_video_render/versions/1.1.0",
+  "source_repository": "git://github.com/espressif/esp-gmf.git",
+  "repository_info": {
+    "commit_sha": "17ce627cd547d94acfc14890807dbccdc8b459c6",
+    "path": "./packages/esp_video_render"
+  },
+  "upstream_url": "https://github.com/espressif/esp-gmf/tree/main/packages/esp_video_render",
+  "license_sha256": "24c5f24313e013f99686d6275500d5ac5f7b1ec4fba2a98073fd05d6e2a182f0",
+  "manifest_sha256": "1748e7eebb30c561023ab3dc9583ef5539e06b25f90eec44ce020331d383c36a",
+  "firmware_dependency_lock": "firmware/apps/80mhz/dependencies.lock",
+  "firmware_dependency_lock_sha256": "926d9d87d5a50d54c8abe46c221328ebc23cc20a98750ef7a7ed449fb749f0f7",
+  "original_registry_download_receipt": "REGISTRY_SOURCE.json"
+}

@@ -1,0 +1,32 @@
+# Build products and local upstream checkouts
+/upstream/
+build*/
+managed_components/
+sdkconfig.old
+__pycache__/
+*.pyc
+.tools/
+.build/
+.local/
+node_modules/
+*.log
+*.elf
+*.map
+*.o
+*.a
+firmware/**/*.bin
+firmware/**/*.zip
+# Device/account state belongs outside the source repository
+backups/
+evidence/
+private/
+secrets/
+.env
+.env.*
+!.env.example
+device-client.json
+device-token
+cookies.json
+*.pem
+*.key
+

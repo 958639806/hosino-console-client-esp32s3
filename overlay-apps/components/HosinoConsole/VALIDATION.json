@@ -1,0 +1,161 @@
+{
+  "syntax_checks": [
+    {
+      "source": "HosinoConsole.cpp",
+      "exit_code": 0,
+      "diagnostics": "",
+      "headers": "Current PairState and latched completed_request_status API; actual Xtensa current build flags/dependencies in isolated ASCII scratch."
+    }
+  ],
+  "compiler": "Xtensa ESP GCC14.2.0, real current project C/C++ flags and actual Brookesia/LVGL headers",
+  "extra_defines": [
+    "LV_USE_IME_PINYIN=1",
+    "LV_IME_PINYIN_USE_K9_MODE=1"
+  ],
+  "sha256": {
+    "HosinoConsole.cpp": "929f4f5eccbdf508ee83e4d570f3ed852af15aa4039dc263202b736d850ff19c",
+    "HosinoConsole.hpp": "656f71e53801653630904b1ad63309f1d9d897e24e8d756f410491e4bdee4917",
+    "hosino_console_icon.c": "21b43729eacce32785654e20eaba5521efb27e39d6b37aee427d2131b061dd5a"
+  },
+  "full_build": "v19 device-pairing UI candidate; no staging/build/flash performed by UI agent.",
+  "hardware_ui_and_network": "Pairing server/page not deployed at implementation time. UI candidate passed source/host/syntax checks only; no real pairing or device UI validation claimed.",
+  "scope": "UI source review, actual Xtensa syntax and extracted production-policy host test. No serial, real network request, or firmware staging/build by UI agent.",
+  "client_header_sha256": "b7ec145e5004f188132b2b1f002202518d5a51d3cc504f634c9582b9987f0224",
+  "last_validation_utc": "2026-11-12T09:52:36.448074+00:00",
+  "lifecycle_review": "close shuts down one existing client and immediately frees UI snapshots/command; next run waits isStopped before destroy/create; no new reaper/timer; worker-owned heavy cleanup is provided by client component.",
+  "selection_review": "Pointer-only touch-down guard precedes copySnapshot; button/encoder pressed state cannot indefinitely freeze navigation. Visible session row indices and backing keys remain frozen until touch release.",
+  "keyboard_layout_review": "LVGL 9.4 keyboard constructor defaults BOTTOM_MID; explicit TOP_LEFT fixes off-root y offset. At 364px content height, keyboard 166px starts y198 (ends364), instead of y396. Pinyin candidate y166..196. Source/geometry check only; hardware keyboard retest pending.",
+  "password_keyboard_review": {
+    "layout": "6 columns x 4 rows; 3 character rows plus control row; at 400x364 root, keyboard y120 h244, nominal keys 63x58px",
+    "pages": 7,
+    "ascii_coverage": "All 95 printable ASCII code points 0x20..0x7e, verified from source page constants plus space control",
+    "font": "ASCII/SYMBOL Montserrat20, Chinese controls fallback hosino_chat_font_16; no new font",
+    "events": "Stock keyboard callback removed; only custom handler inserts; map changes deferred to timer; no key-repeat",
+    "visibility": "Hidden by default; explicit show/hide; wipeEditor re-hides and erases on leave/pause",
+    "hardware_retest": "Pending"
+  },
+  "compact_chat_review": {
+    "normal_message_viewport_px": 268,
+    "previous_message_viewport_px": 156,
+    "layout": "400x364 root, header40, list y46 and bottom50, composer44; operations in ChatMenu",
+    "protection": "Readonly channel label and send gating retained; send-uncertain warning and disabled input retained; pointer guard remains before copySnapshot",
+    "voice": "Action::Voice -> onVoiceRequested placeholder reports unavailable, opens visible menu notice; no microphone activity",
+    "input": "LVGL K26 single-character candidates only, candidate row36px; Chinese keyboard204px and English/numeric240px",
+    "password_regression": "renderPasswordEditor/updatePasswordKeyboard/onPasswordKey/wipeEditor byte-identical to v14 staged source",
+    "hardware_retest": "Pending"
+  },
+  "session_selection_fix": {
+    "root_cause": "copySnapshot overlays live active/queue busy without a new published revision, while UI formerly redrew only on revision; generic busy plus UI pending also disabled cached rows during slow background or explicit list GET.",
+    "changes": [
+      "Redraw on busy change even if revision is unchanged; existing scroll preservation and pointer freeze remain.",
+      "Enable session entry/valid cached rows during background reads.",
+      "Only SelectSession can supersede UI-pending RefreshSessions; send/login/create/ASR cannot be bypassed."
+    ],
+    "checks": {
+      "real_xtensa_syntax": "pass, current project compiler flags/headers",
+      "preserved_against_v15_stage": {
+        "bool touch_down()": true,
+        "void HosinoConsole::renderPasswordEditor()": true,
+        "void HosinoConsole::updatePasswordKeyboard()": true,
+        "void HosinoConsole::onPasswordKey(": true,
+        "void HosinoConsole::createKeyboard(": true,
+        "void HosinoConsole::onVoiceRequested()": true
+      },
+      "pointer_guard_before_snapshot_copy": true,
+      "send_abort_send_available_guard": true
+    },
+    "limits": "Source/lifecycle checks only. No serial, network request, firmware build, or real-device UI test."
+  },
+  "interaction_v17": {
+    "root_causes": [
+      "Global HTTP busy was used as an interaction lock and every polling revision rebuilt the root; v16 busy redraw compounded visible flashing.",
+      "Drafts were retained on queue acceptance but no matching server-send acceptance ever cleared them."
+    ],
+    "refresh": "Only page-visible content affects the render signature. Busy, revision, status and elapsed time update existing labels/button states; they do not rebuild root or row hit targets.",
+    "gating": "Only a matching outstanding explicit write blocks another write. Background/explicit reads do not disable session browsing, composition or voice. Compose may edit next text during Send/SendQQ; confirmation and send remain blocked until ACK.",
+    "selection": "Visible row snapshot frozen while pointer pressed. _selectingKey blocks target-dependent actions until snapshot applies that key, clears on selection ACK/failure or a successful POST that supersedes the old selection.",
+    "draft": "accepted_send_request_id must match sent ID. Only the same session and unchanged submitted draft/textarea are cleared; edited next text and pending-navigation saved drafts survive. Rejected/uncertain sends retain draft.",
+    "qq": "Default AI-device deliver=false. Explicit QQ mode chooser: AI-QQ deliver=true, DirectQQ requires qq_send_available and confirm=true. Both channel modes require a target+text confirmation page before submit; no automatic send/retry.",
+    "layout": {
+      "root_px": [
+        400,
+        396
+      ],
+      "side_margin_px": 40,
+      "bottom_margin_px": 36,
+      "chat_message_height_px": 300,
+      "chat_footer_px": 40,
+      "session_rows_height_px": 58,
+      "brookesia_visual_area": "Existing App enables resized visual area; base_app sets screen size to visual rect and shifts screen to visual origin. Status bar/system gesture sources unchanged."
+    },
+    "host_policy_test": {
+      "passed": true,
+      "source_sha256": "759c84e8441287a0e1044200bc69422e59e266a53f5b793050ddf590f50d4ce1",
+      "functions": [
+        "void erase_text(",
+        "void copy_text(",
+        "bool writes_state(",
+        "bool HosinoConsole::pendingWrite()",
+        "bool HosinoConsole::selectionReady()",
+        "bool HosinoConsole::actionBlocked(",
+        "void HosinoConsole::acceptSentDraft()"
+      ],
+      "output": "PASS 40 assertions: polling, explicit writes, selected target, matching ACK, edited/navigation drafts",
+      "static_content_checks": "busy/revision/status/elapsed excluded from content signature; chat/list busy gating absent; superseded selection intent cleared",
+      "scope": "Actual extracted production policy bodies with mechanical C syntax adaptation and state-only LVGL stubs; not a render, firmware or device test",
+      "hardware_or_network_access": false
+    },
+    "cross_review": "black_screen_audit reviewed ACK/confirmation/content signature and found superseded SelectSession intent; fix applied before final source freeze.",
+    "device_retest": "Pending parent integration: long background list GET, selection+voice, matching ACK draft clear, and explicit QQ confirmation."
+  },
+  "send_recovery_v18": {
+    "observed": "SendQQ id5 HTTP502, ESP_FAIL completion; later RefreshHistory id6 completes. Previous uncertainty disabled compose and voice without an in-app recovery path.",
+    "policy": "Keep editing, voice, mode choice, menu and navigation usable. Actual resend remains blocked until exact-target explicit review; ResolveUncertain is local-only and never submits text.",
+    "diagnostics": "Persistent send_http_status/send_error_code/send_status shown in review instead of later polling status.",
+    "draft": "Failure and resolve preserve draft. Resolution itself never clears or resends it.",
+    "confirmation": "Review page matches current authenticated selected key to saved target; pending write or switching target prevents resolve. Pause invalidates review target.",
+    "tests": {
+      "policy": "PASS 57 assertions: polling, explicit writes, selected target, matching ACK, edited/navigation drafts, uncertain recovery target/auth/write guards",
+      "real_xtensa_syntax": "pass, zero diagnostics",
+      "new_label_font_coverage": "All UI text literals covered by actual chat/symbol fonts + ASCII fallback; 350 unique characters; no font changes",
+      "result_scope": "send_result_key must match selected_key before rendering persistent send error"
+    },
+    "results": [
+      "tests/interaction-policy-result.json",
+      "tests/syntax-result.json"
+    ]
+  },
+  "historical_sections_note": "compact_chat_review, session_selection_fix and interaction_v17 describe older stages; send_recovery_v18 is the current delta.",
+  "device_pairing_ui_v19": {
+    "login": "Primary explicit PairStart with fixed friendly name; password login retained as fallback. Remember checkbox explicitly applies only to password cookie.",
+    "pairing": "400x396 content; 40px Montserrat 9-character public short code; fixed hosino.ume.wiki/pair.html; state/status/countdown, cancel, terminal-state retry. Countdown updates labels without root rebuilding.",
+    "secret_boundary": "UI references only public short code, fixed approved URL, state, TTL, public device identity. No pairId, pollSecret or credential token in UI source or Snapshot display. Remote verification_uri never used as displayed URL.",
+    "lifecycle": "Back, menu departure and pause cancel unfinished pairing via nonblocking cancelPairing; local PairStart pending cleared. Verified Ready+authed+device_authenticated transitions to chat without cancel. Completed device credentials are not cleared on navigation.",
+    "forget": "Device-name menu entry and identity view. Explicit confirmation snapshots public device_id, requires matching current stored identity, no credential write pending and no other write. ForgetDevice carries confirm=true; text explains local-only removal, server revocation through logged-in website.",
+    "password": "Entering keyboard cancels unfinished pairing only; actual Login submission owns identity switch. Existing password keyboard functions retained.",
+    "tests": {
+      "production_policy": "PASS 88 assertions: polling, explicit writes, selected target, matching ACK, edited/navigation drafts, uncertain recovery, device pairing/local forgetting and login phase guards",
+      "real_xtensa_syntax": "pass, zero diagnostics",
+      "font_coverage": "372 unique UI literal characters covered; no generated font changes",
+      "actual_font_code_width_px": {
+        "XXXX-XXXX": 230.8125,
+        "WWWW-WWWW": 375.8125,
+        "8888-8888": 221.3125
+      },
+      "available_code_width_px": 400
+    },
+    "unverified": [
+      "Server/page deployment",
+      "Target pairing approval and NVS handshake",
+      "Physical touch/layout acceptance",
+      "Cancel/expiry across real network delays"
+    ]
+  },
+  "login_feedback_v19": {
+    "cause": "Client formerly held explicit Login pending while subsequent read-only features/session loads completed. Client now acknowledges verified login first and runs reads separately.",
+    "ui": "Pending Login shows the worker login/validation phase, unauthenticated busy state is not replaced with generic background-sync text. Failed command displays latched completed_request_status, preventing later GETs from overwriting failure details. Login failure notices clear only when authentication becomes successful; unrelated notices are retained. Login landing always shows upward return hint.",
+    "tests": "PASS 88 assertions: polling, explicit writes, selected target, matching ACK, edited/navigation drafts, uncertain recovery, device pairing/local forgetting and login phase guards",
+    "glyph_coverage": "372 unique UI literal characters covered by actual existing fonts; no generated font modifications",
+    "limits": "Syntax and host policy only; no physical weak-network login/reopen test, no staging or flash by UI agent."
+  }
+}

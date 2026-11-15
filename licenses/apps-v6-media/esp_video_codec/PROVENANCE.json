@@ -1,0 +1,17 @@
+{
+  "component": "espressif/esp_video_codec",
+  "version": "0.5.7",
+  "component_hash": "e717c04f9dc491a3fefd655500d7009a107391127e6903c4005bfec0bbd3c29c",
+  "component_content_verified": true,
+  "registry_version_url": "https://components.espressif.com/components/espressif/esp_video_codec/versions/0.5.7",
+  "source_repository": "git://github.com/espressif/esp-adf-libs.git",
+  "repository_info": {
+    "commit_sha": "08fc31164b0f4190c439e8d3fa5099d65a68984a",
+    "path": "esp_video_codec"
+  },
+  "upstream_url": "https://github.com/espressif/esp-adf-libs/tree/master/esp_video_codec",
+  "license_sha256": "0bf7f2018fffa1caff5ecbf10d79707b218eea4e26b8c705d744de4556552815",
+  "manifest_sha256": "40675d4a7763502b88cd800280424f0526c3587f06fe24bc0f0301ed87b6f8e6",
+  "firmware_dependency_lock": "firmware/apps/80mhz/dependencies.lock",
+  "firmware_dependency_lock_sha256": "926d9d87d5a50d54c8abe46c221328ebc23cc20a98750ef7a7ed449fb749f0f7"
+}

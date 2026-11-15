@@ -1,0 +1,17 @@
+{
+  "component": "espressif/esp_muxer",
+  "version": "1.2.4",
+  "component_hash": "0c474253d2bbb493f1e2f1fa4e8c790290bedb99ce74de843d218765e2a56c9b",
+  "component_content_verified": true,
+  "registry_version_url": "https://components.espressif.com/components/espressif/esp_muxer/versions/1.2.4",
+  "source_repository": "git://github.com/espressif/esp-adf-libs.git",
+  "repository_info": {
+    "commit_sha": "a79a75e43e0c9db8b3a682c1e739c81113dd604e",
+    "path": "esp_muxer"
+  },
+  "upstream_url": "https://github.com/espressif/esp-adf-libs/tree/master/esp_muxer",
+  "license_sha256": "24c5f24313e013f99686d6275500d5ac5f7b1ec4fba2a98073fd05d6e2a182f0",
+  "manifest_sha256": "bea3d186135fe9ca18ae534745b9100ffa8924c0beddb8f37b7df0c5b39310fe",
+  "firmware_dependency_lock": "firmware/apps/80mhz/dependencies.lock",
+  "firmware_dependency_lock_sha256": "926d9d87d5a50d54c8abe46c221328ebc23cc20a98750ef7a7ed449fb749f0f7"
+}

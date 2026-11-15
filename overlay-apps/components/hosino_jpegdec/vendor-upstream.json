@@ -1,0 +1,47 @@
+{
+  "repository": "https://github.com/bitbank2/JPEGDEC",
+  "commit": "32132971bcc032b5b14f1e1e968c242d8d986854",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_blob_sha": "326e04a2c8a8b555a6ee1b7d646d75a89611e2aa",
+      "patched": false
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "33520aa5fb18f9d0ef63e42d25cd79d84a0fb5dc",
+      "patched": false
+    },
+    {
+      "path": "src/JPEGDEC.cpp",
+      "git_blob_sha": "bdc0ca5f246ea73741011e4c84ebb0993f4dd735",
+      "patched": false
+    },
+    {
+      "path": "src/JPEGDEC.h",
+      "git_blob_sha": "fcb1931fd1ee2ac0745d69c2d680a8bf5ef8a41d",
+      "patched": false
+    },
+    {
+      "path": "src/jpeg.inl",
+      "git_blob_sha": "0d61af9b55fe94017d3bdabf2c2251546b0e2a9c",
+      "patched": true
+    },
+    {
+      "path": "src/s3_simd_420.S",
+      "git_blob_sha": "7fadd554597f66f70f9221573b2e826c8e5113a5",
+      "patched": true
+    },
+    {
+      "path": "src/s3_simd_444.S",
+      "git_blob_sha": "b619f1476f1c1f3e1925d5c0fef6fe117f7c2b4d",
+      "patched": true
+    },
+    {
+      "path": "src/s3_simd_dequant.S",
+      "git_blob_sha": "becabef132e1c4620100a9d6a52be85e90d49da0",
+      "patched": true
+    }
+  ]
+}

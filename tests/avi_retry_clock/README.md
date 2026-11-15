@@ -1,0 +1,5 @@
+The v22 workaround targets the pinned `espressif/esp_extractor` 1.0.7 AVI MJPEG preview/allocate/retry behavior. The production helper reads the exact AVI video `strh` scale/rate using at most a 64 KiB header and a shared 512-chunk budget. It subtracts one cumulative rational retry bias, keeping rounding error within 1 ms, and rejects unexpected metadata.
+
+Run `python tests/avi_retry_clock/run_tests.py` for the production header parser/arithmetic tests. Run `python tests/extractor_fairness/run_tests.py` for the actual production process, ownership, deliberate video shedding, fake vendor timestamp inflation, selected-track disable/re-enable, late-eligibility, rejected/accepted seek, and close lifecycle tests.
+
+The host tests model the parser ordering verified in the pinned Xtensa disassembly; they do not execute that binary parser or measure audible/display synchronization. Hardware acceptance must verify `AVI_CLOCK enabled=1`, corrected video PTS near audio PTS, continuity, seek, pause/resume and return. Multiple video tracks and headers outside the bounded parser use the vendor behavior unchanged.

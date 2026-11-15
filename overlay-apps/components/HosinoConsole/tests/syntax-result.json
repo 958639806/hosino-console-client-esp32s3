@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "diagnostic_bytes": 0,
+  "diagnostic_log": "C:\\esp\\hosino-qspi\\syntax-console-ui-v19-pair\\ui.log",
+  "compiler": "C:\\esp\\hosino-qspi\\tools\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe",
+  "compile_commands_sha256": "4b297907f597502e7ed48b3af41e79bc74c53acd4bf67658f59efc5c3feb3cb7",
+  "source_sha256": "929f4f5eccbdf508ee83e4d570f3ed852af15aa4039dc263202b736d850ff19c",
+  "header_sha256": "656f71e53801653630904b1ad63309f1d9d897e24e8d756f410491e4bdee4917",
+  "client_header_sha256": "b7ec145e5004f188132b2b1f002202518d5a51d3cc504f634c9582b9987f0224",
+  "time_utc": "2026-11-12T09:51:59.066866+00:00",
+  "scope": "Actual Xtensa syntax-only, current build flags and current overlay UI/client header in isolated ASCII scratch; no staging, linking, firmware or device validation."
+}

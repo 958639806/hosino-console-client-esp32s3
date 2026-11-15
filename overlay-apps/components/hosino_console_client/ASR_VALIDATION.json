@@ -1,0 +1,36 @@
+{
+  "last_validation_utc": "2026-11-12T06:55:41.977869+00:00",
+  "syntax_checks": [
+    {
+      "source": "hosino_console_client.cpp",
+      "exit_code": 0,
+      "diagnostics": ""
+    },
+    {
+      "source": "console_voice_wav.c",
+      "exit_code": 0,
+      "diagnostics": ""
+    },
+    {
+      "source": "bsp_board_extra.c",
+      "exit_code": 0,
+      "diagnostics": ""
+    }
+  ],
+  "hardware_recording": "not tested",
+  "real_asr_endpoint": "not called by this task; live service deployment/configuration remains root-owned",
+  "wav_host_test": "Production C helper compiled/run with TCC; stdlib wave verifies15s16000Hzmono16bit and240000 MIC1 samples; boundary canaries pass",
+  "wire_contract": "POST /api/asr/transcribe raw audio/wav; cookie+X-HS:1;200 ok:true/text;min0.2s max15s;no automatic retry",
+  "cancellation": "stop/cancel flags independent of queue; session/background generation cancels; codec/HTTP owned by one worker; caller never forces deletion",
+  "limits": "Audio driver read has1000ms timeout and potential lock wait; cleanup is asynchronous, not a hard real-time guarantee",
+  "sha256": {
+    "overlay-apps\\components\\hosino_console_client\\hosino_console_client.cpp": "fc040884502512f6972cde8e27d37aae5944384829eceafa0d4fa55b20a1f8a3",
+    "overlay-apps\\components\\hosino_console_client\\include\\hosino_console_client.hpp": "9b4905903ddf1e04fca56721fcfcfb1e963a7713237f86ad453f99add91f8c3e",
+    "overlay-apps\\components\\hosino_console_client\\console_voice_wav.c": "9bcf301490493da6b17a9ba40f0c66737b59f3795917eada6cce24a68c3519ee",
+    "overlay-apps\\components\\hosino_console_client\\console_voice_wav.h": "ec3ea8c798da181c91dd2f344094442bdaabf63d8bc52296e4d42799f2465bc5",
+    "overlay-apps\\components\\bsp_extra\\include\\bsp_board_extra.h": "db1882010ce926f913e41b20913353e2e2e00af499bef93b4b8797e5102a9970",
+    "overlay-apps\\components\\bsp_extra\\src\\bsp_board_extra.c": "bd06e97189c9fabbbf7d3075525f8dde2f758ee7f270f04ab40d146fb71b78ce"
+  },
+  "result_fence": "Worker initial busy snapshot resets voice to Preparing; final Ready commit checks generation/cancel/request serial under control lock; copySnapshot also fences published voice metadata, including later RefreshStatus. Cancel applies to just-completed unread results.",
+  "existing_protocol_regression": "43 JSON cases +10000 bounded fuzz +200 fictional sessions +16384/16385 token boundary passed with unchanged production protocol source"
+}

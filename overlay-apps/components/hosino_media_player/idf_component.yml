@@ -1,0 +1,54 @@
+version: 0.1.0
+description: Apps-only ESP Player adapter retaining Brookesia UI and board audio ownership
+dependencies:
+  idf: '>=5.5,<6.0'
+  espressif/esp_player:
+    version: 1.1.1
+    require: public
+    override_path: ../esp_player_compat/esp_player
+  espressif/esp_audio_render:
+    version: 1.1.0
+    require: public
+  espressif/esp_video_render:
+    version: 1.1.0
+    require: public
+  espressif/gmf_io:
+    version: 1.1.0
+    require: public
+    override_path: ../gmf_io_compat/gmf_io
+  espressif/esp_asrc:
+    version: 1.1.0
+    require: private
+  espressif/esp_audio_codec:
+    version: 2.6.2
+    require: private
+  espressif/esp_audio_effects:
+    version: 1.4.5
+    require: private
+  espressif/esp_extractor:
+    version: 1.0.7
+    require: private
+  espressif/esp_h264:
+    version: 1.5.0
+    require: private
+  espressif/esp_image_effects:
+    version: 1.2.0
+    require: private
+  espressif/esp_muxer:
+    version: 1.2.4
+    require: private
+  espressif/esp_video_codec:
+    version: 0.5.7
+    require: private
+  espressif/gmf_audio:
+    version: 1.1.0
+    require: private
+  espressif/gmf_core:
+    version: 1.1.0
+    require: private
+  espressif/gmf_fft:
+    version: 1.1.0
+    require: private
+  espressif/gmf_video:
+    version: 1.1.1
+    require: private

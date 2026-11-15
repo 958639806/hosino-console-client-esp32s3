@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "compiler": "D:\\PC\\文档\\ChatGPT\\esp32星野\\tests\\fatfs_dual_format\\.tools\\tcc-0.9.27\\tcc\\tcc.exe",
+  "production_helper": "overlay-apps\\components\\esp_player_compat\\esp_player\\src\\sync\\private_inc\\hosino_mjpeg_clock.h",
+  "production_helper_sha256": "9d5773ad9eff0dc6b9c2a6a311a352d524314aaba57537271af16ea43edb31b4",
+  "test_source_sha256": "7b38250553ef44eb8c5cb2f450443953beca7800f956d2c954f971bd354c3f00",
+  "compile_exit_code": 0,
+  "test_exit_code": 0,
+  "sync_source_sha256": "4fdbf7e2535bfc439aee847a425ba46f0d3bae5397214234a882a63af1fda747",
+  "sync_test_exit_code": 0,
+  "sync_test_output": "PASS: audio master forward/backward gap and PCM commit recovery; production player_sync.c lifecycle/generic AUDIO plus actual track FPS and pre-decision clock diagnostics\n",
+  "output": "PASS: real MJPEG clock helper, lifecycle epochs, discontinuities, lag clocks and source guards\n",
+  "scope": "Production C helper/guards and full production player_sync.c using deterministic host clock/RTOS stubs; excludes cross-core scheduling, actual audio hardware and device playback."
+}

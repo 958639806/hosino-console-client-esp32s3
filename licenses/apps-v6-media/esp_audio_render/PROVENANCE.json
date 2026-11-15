@@ -1,0 +1,18 @@
+{
+  "component": "espressif/esp_audio_render",
+  "version": "1.1.0",
+  "component_hash": "659743c7d38c1226b9fae625e358e535dd61b40364e5ef02e1d1eb163d144b28",
+  "component_content_verified": true,
+  "registry_version_url": "https://components.espressif.com/components/espressif/esp_audio_render/versions/1.1.0",
+  "source_repository": "git://github.com/espressif/esp-gmf.git",
+  "repository_info": {
+    "commit_sha": "17ce627cd547d94acfc14890807dbccdc8b459c6",
+    "path": "./packages/esp_audio_render"
+  },
+  "upstream_url": "https://github.com/espressif/esp-gmf/tree/main/packages/esp_audio_render",
+  "license_sha256": "32395cf1ed0b65a896c6cdd93ba06ea08e5ef2349ea80b155bb1699af61efd30",
+  "manifest_sha256": "c70a8fee5e7bd12d6a938b981594216dbdaebdd3e2c3fa4b5ea44b0c6f6a9fe4",
+  "firmware_dependency_lock": "firmware/apps/80mhz/dependencies.lock",
+  "firmware_dependency_lock_sha256": "926d9d87d5a50d54c8abe46c221328ebc23cc20a98750ef7a7ed449fb749f0f7",
+  "original_registry_download_receipt": "REGISTRY_SOURCE.json"
+}

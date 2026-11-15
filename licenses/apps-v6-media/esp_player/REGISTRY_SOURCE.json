@@ -1,0 +1,7 @@
+{
+  "component": "espressif/esp_player",
+  "version": "1.1.1",
+  "registry_url": "https://components.espressif.com/components/espressif/esp_player/versions/1.1.1/readme",
+  "download_url": "https://components-file.espressif.com/components/espressif/esp_player/1.1.1/download/253190a4-74dd-4f45-9e8e-62189e25c19d.zip",
+  "archive_sha256": "6154007608bc7fb49162d756c25755e5f6f93feb8f66f89f59d0be4c632a62af"
+}

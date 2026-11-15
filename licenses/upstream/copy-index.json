@@ -1,0 +1,34 @@
+[
+  {
+    "origin": "waveshare-esp32-s3-touch-amoled-2.16",
+    "commit": "225a62bff11b5d0a0b607873860d39485a9a9685",
+    "original_path": "LICENSE",
+    "copied_file": "waveshare-2.16-LICENSE.txt",
+    "source": "exact pinned git object, Windows working-tree EOL normalized only for comparison",
+    "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+  },
+  {
+    "origin": "waveshare-esp32-s3-touch-amoled-1.75",
+    "commit": "e4344e70c2fa78a13e8a06566507f1ba8af6672a",
+    "original_path": "LICENSE",
+    "copied_file": "waveshare-1.75-LICENSE.txt",
+    "source": "exact pinned git object, Windows working-tree EOL normalized only for comparison",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "origin": "waveshare-esp32-s3-touch-amoled-1.8",
+    "commit": "78e13f852929c2ab4f9d5e0ad1c50ea378dbf2b4",
+    "original_path": "LICENSE",
+    "copied_file": "waveshare-1.8-LICENSE.txt",
+    "source": "exact pinned git object, Windows working-tree EOL normalized only for comparison",
+    "sha256": "b3b341839dbbbbbe32a8664d9aac72a78270a8986d40f7065082b37bbce4b301"
+  },
+  {
+    "origin": "espressif-esp-brookesia-v0.6",
+    "commit": "b22c488f50bafe53342c8e171081bd736396ef58",
+    "original_path": "license.txt",
+    "copied_file": "esp-brookesia-LICENSE.txt",
+    "source": "exact pinned git object, Windows working-tree EOL normalized only for comparison",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  }
+]

@@ -1,0 +1,220 @@
+[{
+  "board": "ESP32-S3-Touch-AMOLED-2.16",
+  "kind": "brookesia_localized_apps",
+  "display_qspi_requested_hz": 80000000,
+  "not_panel_refresh_hz": true,
+  "not_flash_clock": true,
+  "upstream_commit": "225a62bff11b5d0a0b607873860d39485a9a9685",
+  "idf_version": "v5.5.5",
+  "idf_commit": "b774170ff46c393eeb5e495ea37936038d3f4f4f",
+  "combined": {
+    "file": "brookesia-qspi-80mhz-apps.bin",
+    "flash_offset": "0x0",
+    "size": 7593952,
+    "sha256": "d41f82a4d5c3ffbf3adbaffe7aceaea6d03625f55f6da970f1a677e943fb1a60"
+  },
+  "split_images": [
+    {
+      "offset": "0x0",
+      "file": "split/bootloader.bin",
+      "size": 22288,
+      "sha256": "89a135ff167fc4f69ab31aec7bb89e0a28f62b0ebd9f1fe0eaa5b7c4b03d5ffe"
+    },
+    {
+      "offset": "0x8000",
+      "file": "split/partition-table.bin",
+      "size": 3072,
+      "sha256": "d55f770ce72c56f7766b761b56fd8783349e9620de179646fc9d1cdf8f5e7280"
+    },
+    {
+      "offset": "0x10000",
+      "file": "split/esp-brookesia.bin",
+      "size": 7528416,
+      "sha256": "fbd6277ca2f3d4e2207aa2a17f0461fc320991608be7fe42f7aae460e2819b0e"
+    }
+  ],
+  "flash_settings": {
+    "flash_mode": "dio",
+    "flash_size": "16MB",
+    "flash_freq": "80m"
+  },
+  "dependency_lock_sha256": "4b4b60afb9f1bf5cdca513029d142a5ddf66a2bcad53874b226f1fb4eab96261",
+  "sdkconfig_sha256": "7f6e339bf6bed97f63781b7d8bedbd4af6643a76cb259b5afb2d3f6a4912422b",
+  "app_elf_sha256": "e1a32f7f661de89f77c87e13fb29a563c0dde3e1085a4b42517eef649d86215d",
+  "app_map_sha256": "74f8d73a0134fc0cd6249502189347847ecad8016629f9d7bb02230da430a1fd",
+  "validation": {
+    "compiled": true,
+    "merge_offsets_verified": true,
+    "hardware_flashed": false,
+    "display_stability_tested": false,
+    "fps_measured": false
+  },
+  "features": {
+    "hud": "UI FPS: last flush-ready notifications per elapsed second; not optical scan Hz",
+    "apps": [
+      "\u6e32\u67d3\u6d4b\u8bd5",
+      "\u6eda\u52a8\u6d4b\u8bd5",
+      "\u754c\u9762\u793a\u4f8b",
+      "\u6027\u80fd\u6d4b\u8bd5",
+      "\u8ba1\u7b97\u5668",
+      "2048",
+      "\u65f6\u949f",
+      "\u753b\u677f",
+      "\u76f8\u518c",
+      "\u8bbe\u7f6e",
+      "\u5f55\u97f3",
+      "\u91cd\u529b\u5c0f\u7403",
+      "\u97f3\u4e50",
+      "\u89c6\u9891\u64ad\u653e",
+      "\u58f0\u97f3\u9891\u8c31",
+      "\u661f\u91ce\u63a7\u5236\u53f0",
+      "\u54d4\u54e9\u54d4\u54e9"
+    ],
+    "project_version": "qspi-apps-23",
+    "draw_buffer_height": 50,
+    "draw_buffer_count": 2,
+    "draw_buffer_memory": "PSRAM",
+    "psram_direct_dma": false,
+    "dma_staging": "internal SRAM; LCD IO chunks at most 32768 bytes on ESP32-S3 SPI2",
+    "hardware_wiring_changed": false,
+    "te_sync_enabled": false,
+    "render_mode": "PARTIAL",
+    "draw_buffer_total_bytes": 96000,
+    "lvgl_task_stack_bytes_minimum": 16384,
+    "startup_brightness_serialized_with_lvgl": true,
+    "benchmark_source": "LVGL v9.4.0 benchmark; 15 basic scenes adapted to an app-owned root",
+    "benchmark_metrics": "completed UI FPS; no synthetic overall score or whole-chip CPU percentage",
+    "ui_language": "zh-CN",
+    "status_bar_horizontal_inset_px": 40,
+    "canvas_resolution": [
+      480,
+      480
+    ],
+    "display_crop_enabled": false,
+    "corner_clip_enabled": false,
+    "recents_memory": {
+      "safe_width_px": 400,
+      "top_padding_px": 40,
+      "alignment": "center",
+      "shows": "free internal and external 8-bit data memory",
+      "refresh_interval_ms": 1000,
+      "refresh_when": "recents visible; initial sample after app install"
+    },
+    "expected_app_count": 17,
+    "bilibili": {
+      "status": "candidate_not_device_validated",
+      "separate_app": true,
+      "bridge_origin": "user-configured HTTPS; device Bearer header; no redirects",
+      "account": "Normal phone-confirmed QR login; account cookies stay on private server storage",
+      "resolutions": [
+        [
+          320,
+          180,
+          20
+        ],
+        [
+          480,
+          270,
+          15
+        ]
+      ],
+      "video_target_kbps": [
+        0,
+        800,
+        1200,
+        1800,
+        2500,
+        3500
+      ],
+      "audio": "PCM16 mono 22050Hz; AUDIO master",
+      "network_ring_bytes": 262144,
+      "preserves": [
+        "desktop",
+        "status bar",
+        "full-screen edge gestures",
+        "local media player"
+      ],
+      "hardware_playback_verified": false,
+      "configuration": "Physical USB JSON provisioning; device token stored in separate NVS namespace, never embedded in firmware; NVS executes on internal stack"
+    },
+    "console": {
+      "views": [
+        "Chat",
+        "Management"
+      ],
+      "endpoint": "https://hosino.ume.wiki",
+      "transport": "TLS 1.2 HTTPS with certificate bundle and hostname validation; no redirects",
+      "tls_dynamic_memory": "PSRAM",
+      "authentication": "Device pairing via owner-approved short code and separately persisted Bearer token; ACK only after durable NVS save; explicit password fallback can remember verified hs_sid; passwords never persisted",
+      "chat": "Explicit existing-session AI send/abort, default deliver:false; confirmed QQ delivery/direct text; request-ID acceptance; no automatic POST retry",
+      "management": [
+        "overview",
+        "models",
+        "usage",
+        "memory search"
+      ],
+      "input": "Full-key K26 Pinyin with LVGL single-character dictionary; English, numeric and symbol modes",
+      "password_input": "Dedicated six-column paged large keyboard; ASCII letters, numbers, punctuation and space; explicit show/hide, masked by default",
+      "response_limit_bytes": 262144,
+      "json_token_limit": 16384,
+      "chat_font_glyph_count": 7204,
+      "chat_font_size_px": 16,
+      "chat_font_bpp": 2,
+      "chat_font_sha256": "6842ef1bfa82f265def0029781852f1c42da434806614a420b8725252514b524",
+      "chat_font_storage": "Static const flash-mapped; RODATA copying into PSRAM disabled; code still fetched from PSRAM",
+      "background_network_buffers": "Released by worker after HTTP cleanup; recreated on next foreground request",
+      "voice_conversation_included": false,
+      "voice_input": "Explicit ES7210 MIC1 capture,16kHz mono PCM16 WAV,max15s; HTTPS /api/asr/transcribe; result appends editable draft,never auto-sends",
+      "voice_server_requirement": "MiMo pay-as-you-go key remains server-side; deployed ASR endpoint required",
+      "hardware_shortcuts": "POWER GPIO16 active-high, BOOT GPIO0 and USER GPIO18 active-low; short release only; user mapping in NVS; app foreground only",
+      "supplemental_font": "7749 monochrome emoji/kaomoji/symbol glyphs; no full combined-emoji shaping",
+      "chat_message_area_px": [
+        400,
+        300
+      ],
+      "session_selection": "Background reads do not lock controls; keyed selection barrier; explicit command ACK; content-based redraw",
+      "device_acceptance": "pending; build candidate is not a flashed or accepted console"
+    },
+    "media_storage": "FAT32 and exFAT microSD, MBR; no autoformat",
+    "video_volume": "0-100, codec update on existing video worker",
+    "console_send_recovery": "Explicit local target-confirmed acknowledgement; never resends or clears draft; preserve last send HTTP result",
+    "device_pair_server_requirement": "Reviewed device pairing server patch must be deployed; firmware alone cannot enable pairing",
+    "video_audio_sync": "AUDIO-master PCM timestamp gaps remain renderable; only successful sink output advances audio reference; seek/pause generation gates retained",
+    "media_task_priorities": {
+      "extractor_with_audio": 7,
+      "audio_decode": 9,
+      "audio_render": 10,
+      "video_decode": 5,
+      "video_render": 5,
+      "mixer": 20
+    },
+    "touch_guard": "15-byte dual-touch reports, hardware IDs and ACK; 8ms LVGL input period; stable primary pointer with all-release handoff barrier; app-local pinch; actual report rate and gestures require device validation",
+    "mjpeg_audio_admission": "Local MJPEG A/V can release excess independent compressed video frames before decoding to keep demux audio progressing; bounded 256KiB compressed A/V pool; no automatic audio discard",
+    "avi_mjpeg_retry_timestamps": "Pinned AVI extractor retry-counter compensation using the selected local MJPEG stream's exact dwScale/dwRate; no integer-FPS reconstruction; device A/V synchronization requires validation",
+    "video_pinch_routing": "Blank chrome backgrounds pass input to video content; buttons and sliders keep exclusive hit targets; physical 40px edge start exclusion retained",
+    "video_presentation": "Original memcpy, aspect-fit/fill opaque RGB565 resampling into two PSRAM buffers; 2880-byte internal row scratch, canvas 1:1; no source-resolution improvement",
+    "sdmmc_requested_hz": 40000000,
+    "sdmmc_bus_width": 1,
+    "file_stdio_cache_bytes": 16384,
+    "file_stdio_cache_memory": "PSRAM; unchanged fixed internal SD DMA bounce buffer",
+    "sdmmc_fixed_dma_bytes": 4096,
+    "lvgl_allocator": "CLIB core allocation wrappers: PSRAM first, internal fallback; global allocator unchanged",
+    "fatfs_exfat": true,
+    "fatfs_lba64": false,
+    "settings": "Wi-Fi disconnect/forget; BLE control and scan; PMU telemetry; internal and card storage; device details",
+    "audio": "2.16 pins, ES8311 output + ES7210 stereo STD input; exclusive app sessions",
+    "media_framework": "Espressif ESP Player 1.1.1; audio/video render 1.1.0; Brookesia app UI retained",
+    "media_acceptance": "FLAC audio and video performance require independent device validation",
+    "media_samples_embedded": false,
+    "media_samples_install_at_boot": false,
+    "status": "native Wi-Fi, read-only PMU battery telemetry, SNTP system clock",
+    "original_xiaozhi_ai_included": false,
+    "app_partition_bytes": 8388608,
+    "fixed_lcd_dma_staging_bytes": 48000,
+    "fps_hud": "Single line at status bar center, x=190..289 y=14, noninteractive; detailed memory metrics on serial",
+    "fixed_staging_reuse": "drain old DMA, copy, submit once through original IO; original completion callback retained",
+    "internal_dma_reserve_bytes": 98304,
+    "malloc_internal_preference_threshold_bytes": 256,
+    "recommended_flashing": "validated split images via Flash-Firmware.ps1 -Apps; preserves NVS/PHY gaps"
+  }
+}]

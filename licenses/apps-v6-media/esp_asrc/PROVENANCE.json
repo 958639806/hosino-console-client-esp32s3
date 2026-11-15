@@ -1,0 +1,17 @@
+{
+  "component": "espressif/esp_asrc",
+  "version": "1.1.0",
+  "component_hash": "20da57976f191b60399b6c2ea46e33c121e08ad03c11e269f690c80e7eb7f7b5",
+  "component_content_verified": true,
+  "registry_version_url": "https://components.espressif.com/components/espressif/esp_asrc/versions/1.1.0",
+  "source_repository": "git://github.com/espressif/esp-gmf.git",
+  "repository_info": {
+    "commit_sha": "71418e93ac42f1aa5778ef83212194df89c4b2bb",
+    "path": "./packages/esp_asrc"
+  },
+  "upstream_url": "https://github.com/espressif/esp-gmf/tree/main/packages/esp_asrc",
+  "license_sha256": "24c5f24313e013f99686d6275500d5ac5f7b1ec4fba2a98073fd05d6e2a182f0",
+  "manifest_sha256": "3ebdda8b9c099fcadb4084c48e23fcfb334df0f39815c13ab415c393e87cec4a",
+  "firmware_dependency_lock": "firmware/apps/80mhz/dependencies.lock",
+  "firmware_dependency_lock_sha256": "926d9d87d5a50d54c8abe46c221328ebc23cc20a98750ef7a7ed449fb749f0f7"
+}

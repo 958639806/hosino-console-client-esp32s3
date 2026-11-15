@@ -1,0 +1,67 @@
+menu "Screen QSPI clock test"
+
+    choice APP_LCD_QSPI_CLOCK
+        prompt "Display QSPI bus clock"
+        default APP_LCD_QSPI_40MHZ
+        help
+            Select the requested QSPI clock for the display on SPI2, CS GPIO12.
+            This does not change the panel refresh rate, Flash/PSRAM clock,
+            LVGL refresh period, or any other SPI device's configuration.
+
+        config APP_LCD_QSPI_40MHZ
+            bool "40 MHz baseline"
+
+        config APP_LCD_QSPI_80MHZ
+            bool "80 MHz test"
+            help
+                Experimental display bus setting; stability must be checked
+                on the actual board. The driver-reported clock is logged.
+
+    endchoice
+
+endmenu
+
+config HOSINO_PERF_DEMO
+    bool "Enable UI FPS overlay and performance test applications"
+    default n
+    help
+        Show completed LVGL refreshes per second and add Render Test and
+        Scroll Test to Brookesia. This is not the panel's optical scan rate.
+
+config HOSINO_DISPLAY_BUFFERED
+    bool "Enable extended benchmark and configurable PSRAM drawing buffers"
+    depends on HOSINO_PERF_DEMO && IDF_TARGET_ESP32S3 && SPIRAM
+    default n
+    help
+        Experimental software-only display path for this board's SPI2/CS12 LCD.
+        Use two RGB565 drawing buffers in PSRAM and copy pixel
+        chunks into internal DMA buffers. Keep LVGL partial rendering and
+        the board's existing scan settings. This does not provide TE sync.
+
+config HOSINO_DISPLAY_BUFFER_HEIGHT
+    int "Display drawing buffer height in rows"
+    depends on HOSINO_DISPLAY_BUFFERED
+    range 2 480
+    default 50
+    help
+        The known-good 50-row pipeline is the default. Full-height 480-row
+        buffers remain available for experiments, but reduced Scroll Test
+        performance on this board and did not eliminate tearing.
+
+config HOSINO_DISPLAY_CORNERS
+    bool "Enable calibrated invisible-corner transfer cropping"
+    depends on HOSINO_DISPLAY_BUFFERED
+    default n
+    help
+        Keep the 480x480 UI and add Corner Cal for visual boundary calibration.
+        Cropping starts disabled on every boot; no panel radius is assumed.
+        The output hook keeps every unmasked pixel, submits at most one LCD
+        rectangle per flush, and records requested/submitted pixel bytes.
+
+config HOSINO_UI_ZH
+    bool "Enable Chinese UI and status bar safe margins"
+    depends on HOSINO_DISPLAY_BUFFERED && !HOSINO_DISPLAY_CORNERS
+    default n
+    help
+        Use the localized overlay, static Chinese font subsets, and 40-pixel
+        status bar side margins. Keep the v4 display pipeline unchanged.

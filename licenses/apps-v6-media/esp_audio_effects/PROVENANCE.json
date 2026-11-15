@@ -1,0 +1,17 @@
+{
+  "component": "espressif/esp_audio_effects",
+  "version": "1.4.5",
+  "component_hash": "93d14a226329ee4e6b3ccf6c6c49efdff563e03ab80df3ae21281c89d1ea02cc",
+  "component_content_verified": true,
+  "registry_version_url": "https://components.espressif.com/components/espressif/esp_audio_effects/versions/1.4.5",
+  "source_repository": "git://github.com/espressif/esp-adf-libs.git",
+  "repository_info": {
+    "commit_sha": "7162d32381d6e1f8c8cba2ee5edcbfe82bc964b1",
+    "path": "esp_audio_effects"
+  },
+  "upstream_url": "https://github.com/espressif/esp-adf-libs/tree/master/esp_audio_effects",
+  "license_sha256": "f9af95d73bd683a810ed8dc655b2af91258852934ba8e687ddcfaaf54ff2d755",
+  "manifest_sha256": "f5fc4315f75da26592c5a9edb1f1a82195951591576bb5650e68b1ebfbc2a4e5",
+  "firmware_dependency_lock": "firmware/apps/80mhz/dependencies.lock",
+  "firmware_dependency_lock_sha256": "926d9d87d5a50d54c8abe46c221328ebc23cc20a98750ef7a7ed449fb749f0f7"
+}

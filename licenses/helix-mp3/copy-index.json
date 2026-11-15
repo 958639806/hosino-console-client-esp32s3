@@ -1,0 +1,26 @@
+[
+  {
+    "origin": "chmorgan/esp-libhelix-mp3@1.0.3",
+    "original_path": "LICENSE",
+    "copied_file": "helix-mp3/wrapper-Apache-2.0-LICENSE.txt",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "origin": "chmorgan/esp-libhelix-mp3@1.0.3",
+    "original_path": "libhelix-mp3/LICENSE.txt",
+    "copied_file": "helix-mp3/Helix-LICENSE.txt",
+    "sha256": "86cd65f6dd725044f6cd23e8ddab1dd447722d58b74bc6b9a3a13088fa8b44fa"
+  },
+  {
+    "origin": "chmorgan/esp-libhelix-mp3@1.0.3",
+    "original_path": "libhelix-mp3/RPSL.txt",
+    "copied_file": "helix-mp3/RPSL.txt",
+    "sha256": "6dd3ee442f128b1c4dbbd84f855d662d5127c22d96c3631c0ef89d26407e628a"
+  },
+  {
+    "origin": "chmorgan/esp-libhelix-mp3@1.0.3",
+    "original_path": "libhelix-mp3/RCSL.txt",
+    "copied_file": "helix-mp3/RCSL.txt",
+    "sha256": "b1b22032413a5918f4157f3a182bd4c72f3642ee4eaa421f7da0f968499755e8"
+  }
+]

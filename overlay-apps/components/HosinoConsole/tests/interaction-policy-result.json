@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "source_sha256": "929f4f5eccbdf508ee83e4d570f3ed852af15aa4039dc263202b736d850ff19c",
+  "functions": [
+    "void erase_text(",
+    "void copy_text(",
+    "bool writes_state(",
+    "bool HosinoConsole::pendingWrite()",
+    "const char *HosinoConsole::pendingWriteStatus()",
+    "bool HosinoConsole::selectionReady()",
+    "bool HosinoConsole::canResolveSend()",
+    "bool HosinoConsole::canStartPairing()",
+    "bool HosinoConsole::canForgetDevice()",
+    "void HosinoConsole::cancelPairingUi()",
+    "bool HosinoConsole::actionBlocked(",
+    "void HosinoConsole::acceptSentDraft()"
+  ],
+  "output": "PASS 88 assertions: polling, explicit writes, selected target, matching ACK, edited/navigation drafts, uncertain recovery, device pairing/local forgetting and login phase guards",
+  "static_content_checks": "busy/revision/status/elapsed excluded from content signature; chat/list busy gating absent; superseded selection intent cleared",
+  "scope": "Actual extracted production policy bodies with mechanical C syntax adaptation and state-only LVGL stubs; not a render, firmware or device test",
+  "hardware_or_network_access": false
+}

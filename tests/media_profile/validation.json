@@ -1,0 +1,17 @@
+{
+  "source_sha256": {
+    "overlay-apps/components/hosino_media_player/media_profile.c": "2823a6c03db7f51afabd03b8a020997e324be7db624477ba3dd766dbd732ab6a",
+    "overlay-apps/components/hosino_media_player/media_profile.h": "4ec7c4f6463d0ef99ae5af67f5d67f4ea8fa4cfcc54695ac66427d65186e1a3f",
+    "overlay-apps/components/hosino_media_player/include/hosino_media_player.h": "06745545baded0cf07545a01e58ebca52f4689dfbf18393b1ec134c813c7faee",
+    "overlay-apps/components/esp_player_compat/esp_player/include/hosino_player_diagnostics.h": "72cca78ac43a4ed48252f241315e69509a277f20e720e39a1cbb74a8d809a26b",
+    "overlay-apps/components/gmf_io_compat/gmf_io/include/hosino_file_diagnostics.h": "457c879384764281366c8fddaa01e95dea794185e30b99879fcab667cc505f7e"
+  },
+  "unmodified_source_copies": true,
+  "compiler": "D:\\PC\\文档\\ChatGPT\\esp32星野\\tests\\fatfs_dual_format\\.tools\\tcc-0.9.27\\tcc\\tcc.exe",
+  "compiler_sha256": "e9cb3e89e20a9efead83cc9e6b100314275634c2f705056da71f424ea9b0cdf0",
+  "compile_exit_code": 0,
+  "run_exit_code": 0,
+  "stdout": "PASS exact path binding and copied pathname\nPASS read/seek counters, EOF/errors, threshold boundaries, 64-bit totals and take\nPASS stopped/stale tokens, same-path reopen and null reset\nPASS real decoder wrapper, in-flight generation changes and elapsed clamps\nPASS pipeline/audio metrics and disabled-session suppression\nPASS clock hook snapshot ownership, count/take, null and disabled behavior\nALL 6 REAL MEDIA_PROFILE TEST GROUPS PASSED\n",
+  "stderr": "",
+  "scope": "Actual media_profile.c and public headers; deterministic clock, decoder and critical-section boundary shims. No FreeRTOS scheduling, I/O, device or full player validation."
+}

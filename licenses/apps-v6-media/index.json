@@ -1,0 +1,111 @@
+{
+  "scope": "15 registry media dependencies used by qspi-apps-6",
+  "dependency_lock_sha256": "926d9d87d5a50d54c8abe46c221328ebc23cc20a98750ef7a7ed449fb749f0f7",
+  "components": [
+    {
+      "component": "espressif/esp_player",
+      "version": "1.1.1",
+      "directory": "esp_player",
+      "component_hash": "231d338eb342621cf8ab10db974fabb36492b05121b2adf5e6559744c54ae2da",
+      "license_sha256": "6dd6708f1cded8fe1ac25842572b29a89c260ec3f6b3269e177c87797f8a7338"
+    },
+    {
+      "component": "espressif/esp_audio_render",
+      "version": "1.1.0",
+      "directory": "esp_audio_render",
+      "component_hash": "659743c7d38c1226b9fae625e358e535dd61b40364e5ef02e1d1eb163d144b28",
+      "license_sha256": "32395cf1ed0b65a896c6cdd93ba06ea08e5ef2349ea80b155bb1699af61efd30"
+    },
+    {
+      "component": "espressif/esp_video_render",
+      "version": "1.1.0",
+      "directory": "esp_video_render",
+      "component_hash": "e9aad0fac76431cca92dfaf231a26b06286aa7adfc34fa73f997621f1b9424f4",
+      "license_sha256": "24c5f24313e013f99686d6275500d5ac5f7b1ec4fba2a98073fd05d6e2a182f0"
+    },
+    {
+      "component": "espressif/gmf_core",
+      "version": "1.1.0",
+      "directory": "gmf_core",
+      "component_hash": "79b83ef753144bcada2cc6522b006abf952dae8495c2c2a440e0dbe9d6f48997",
+      "license_sha256": "32395cf1ed0b65a896c6cdd93ba06ea08e5ef2349ea80b155bb1699af61efd30"
+    },
+    {
+      "component": "espressif/gmf_audio",
+      "version": "1.1.0",
+      "directory": "gmf_audio",
+      "component_hash": "741274c26ada50260c31c6c3019092f3518de44c79ce49d43da52a27b20ec7a9",
+      "license_sha256": "32395cf1ed0b65a896c6cdd93ba06ea08e5ef2349ea80b155bb1699af61efd30"
+    },
+    {
+      "component": "espressif/gmf_video",
+      "version": "1.1.1",
+      "directory": "gmf_video",
+      "component_hash": "17911b68c52151a2053c847470495a312a2348ed3f20498d2e6bf80df62afd91",
+      "license_sha256": "32395cf1ed0b65a896c6cdd93ba06ea08e5ef2349ea80b155bb1699af61efd30"
+    },
+    {
+      "component": "espressif/gmf_fft",
+      "version": "1.1.0",
+      "directory": "gmf_fft",
+      "component_hash": "de42f5953b90989ca6588bacd69b0908c7265f4f1eaea8b1d3f163e705661bd4",
+      "license_sha256": "24c5f24313e013f99686d6275500d5ac5f7b1ec4fba2a98073fd05d6e2a182f0"
+    },
+    {
+      "component": "espressif/esp_audio_codec",
+      "version": "2.6.2",
+      "directory": "esp_audio_codec",
+      "component_hash": "a5b9275af74247e3ce536d16a7080e4d77207a185b63e1bea368eb4d57176c2b",
+      "license_sha256": "f9af95d73bd683a810ed8dc655b2af91258852934ba8e687ddcfaaf54ff2d755"
+    },
+    {
+      "component": "espressif/esp_video_codec",
+      "version": "0.5.7",
+      "directory": "esp_video_codec",
+      "component_hash": "e717c04f9dc491a3fefd655500d7009a107391127e6903c4005bfec0bbd3c29c",
+      "license_sha256": "0bf7f2018fffa1caff5ecbf10d79707b218eea4e26b8c705d744de4556552815"
+    },
+    {
+      "component": "espressif/esp_extractor",
+      "version": "1.0.7",
+      "directory": "esp_extractor",
+      "component_hash": "d2e99ae3e45f2d3b0b35d5615e0ef32d5b813daed6f79253aab94b6e76445086",
+      "license_sha256": "bcb685b8ddb3bcd53ae5a617024efa11236c68f43207c42aa51e84603c591cbc"
+    },
+    {
+      "component": "espressif/esp_image_effects",
+      "version": "1.2.0",
+      "directory": "esp_image_effects",
+      "component_hash": "7f605dcd1ebe56ce4adb76cfb1326d6e25e9455d15d60c547397a85929ba1228",
+      "license_sha256": "18f5b91101b93b6140ae0cc23bd420d0c6f9279b7266b72e60e7c380a44e1222"
+    },
+    {
+      "component": "espressif/esp_audio_effects",
+      "version": "1.4.5",
+      "directory": "esp_audio_effects",
+      "component_hash": "93d14a226329ee4e6b3ccf6c6c49efdff563e03ab80df3ae21281c89d1ea02cc",
+      "license_sha256": "f9af95d73bd683a810ed8dc655b2af91258852934ba8e687ddcfaaf54ff2d755"
+    },
+    {
+      "component": "espressif/esp_asrc",
+      "version": "1.1.0",
+      "directory": "esp_asrc",
+      "component_hash": "20da57976f191b60399b6c2ea46e33c121e08ad03c11e269f690c80e7eb7f7b5",
+      "license_sha256": "24c5f24313e013f99686d6275500d5ac5f7b1ec4fba2a98073fd05d6e2a182f0"
+    },
+    {
+      "component": "espressif/esp_h264",
+      "version": "1.5.0",
+      "directory": "esp_h264",
+      "component_hash": "c32e94b137aef712b5a347bf0c29d59eecfbcdbf62a0b6848810c8ecbe363261",
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "component": "espressif/esp_muxer",
+      "version": "1.2.4",
+      "directory": "esp_muxer",
+      "component_hash": "0c474253d2bbb493f1e2f1fa4e8c790290bedb99ce74de843d218765e2a56c9b",
+      "license_sha256": "24c5f24313e013f99686d6275500d5ac5f7b1ec4fba2a98073fd05d6e2a182f0"
+    }
+  ]
+}

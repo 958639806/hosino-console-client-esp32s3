@@ -1,0 +1,208 @@
+{
+  "upstream": {
+    "component": "espressif/esp_player",
+    "version": "1.1.1",
+    "component_hash": "231d338eb342621cf8ab10db974fabb36492b05121b2adf5e6559744c54ae2da",
+    "component_content_verified": true,
+    "registry_version_url": "https://components.espressif.com/components/espressif/esp_player/versions/1.1.1",
+    "source_repository": "git://github.com/espressif/esp-gmf.git",
+    "repository_info": {
+      "commit_sha": "255fb531ddc97ff5e1e113dad97c88f70d6297be",
+      "path": "./packages/esp_player"
+    },
+    "upstream_url": "https://github.com/espressif/esp-gmf/tree/main/packages/esp_player",
+    "license_sha256": "6dd6708f1cded8fe1ac25842572b29a89c260ec3f6b3269e177c87797f8a7338",
+    "manifest_sha256": "59d0a7d170f6befbfede916b738f3ed887757d1009c0494cd55c49af3c715cd8",
+    "firmware_dependency_lock": "firmware/apps/80mhz/dependencies.lock",
+    "firmware_dependency_lock_sha256": "926d9d87d5a50d54c8abe46c221328ebc23cc20a98750ef7a7ed449fb749f0f7",
+    "original_registry_download_receipt": "REGISTRY_SOURCE.json"
+  },
+  "modified_files": [
+    "src/audio/player_audio_render.c",
+    "src/audio/player_pipeline_audio.c",
+    "src/core/private_inc/player_stream.h",
+    "src/extractor/player_extractor.c",
+    "src/sync/player_sync.c",
+    "src/sync/private_inc/player_sync.h",
+    "src/video/player_ports_video.c",
+    "src/utils/player_url.c",
+    "include/esp_player_advance.h",
+    "src/pipeline/player_pipe_events.c",
+    "src/video/player_pipeline_video.c",
+    "src/video/player_pipe_events_video.c",
+    "src/extractor/player_extractor_io.c",
+    "src/extractor/private_inc/player_extractor.h",
+    "src/pipeline/player_pipeline.c",
+    "src/extractor/private_inc/player_extractor_io.h"
+  ],
+  "source_header_sha256": "16d80b5c5ff2cfb212c5c17d17a91425b5b3a3d610166e926a620d1e80be56ff",
+  "local_header_sha256": "667d12f33c59bb2d98aa98fca7c5fb220bc1805b5f430126e8d7a1865807a87d",
+  "scope": "Retain decoded-video depth 2, A/V-only 20 ms audio input (audio-only 100 ms), and v10 local A/V empty-audio-queue yield removal. Apps v11 adds local-file MJPEG A/V predecode late-frame drops at speed 1, anchored on generation-valid successful PCM output; keeps other sources/codecs on generic AUDIO accept behavior while recording initial PTS. Handles pause/resume/seek/EOS/discontinuities and bounded catch-up. Adds three optional drop/reanchor diagnostic events. No task/priority/clock or audio-dropping changes. Apps v11a passes actual track FPS to the local MJPEG policy (23 FPS => 86 ms; unknown => 60 ms), without enabling generic FPS pacing, and adds a pre-decision clock snapshot weak hook for application aggregation. Apps v15: FILE input selects 16KiB stdio cache in PSRAM; existing fixed internal SD DMA bounce path retained. No HTTP cache, codec, pacing, clock or task changes.",
+  "modified_file_hashes": [
+    {
+      "path": "src/audio/player_audio_render.c",
+      "source_sha256": "57feb4267e597fc3d1f269d9d6eeffd0ab5dd3e5bd85d5dc5258945ee0508dad",
+      "local_sha256": "ec1e0ca0519102f8646eb38679d93b3a7b7b45d25f0325b663ab2562d729c524"
+    },
+    {
+      "path": "src/audio/player_pipeline_audio.c",
+      "source_sha256": "3524f13d17c291e44bb2b86cde8697cb1360a530748e94a1e8e558a2a4ba9ea3",
+      "local_sha256": "ebd3a49b4834d6d2de918fc508b74097472da3a0ffefa4f92167d4e9a2f28557"
+    },
+    {
+      "path": "src/core/private_inc/player_stream.h",
+      "source_sha256": "16d80b5c5ff2cfb212c5c17d17a91425b5b3a3d610166e926a620d1e80be56ff",
+      "local_sha256": "667d12f33c59bb2d98aa98fca7c5fb220bc1805b5f430126e8d7a1865807a87d"
+    },
+    {
+      "path": "src/extractor/player_extractor.c",
+      "source_sha256": "651c9533aefa411b1b061fc380ea0206d2db7c0f2b20e577d321c8de71c85908",
+      "local_sha256": "a8b7bf26020bea94e3684ef7cfdc59e8f51961e2e7e4eee26fcda749b26519f2"
+    },
+    {
+      "path": "src/sync/player_sync.c",
+      "source_sha256": "442ac0441c97ff7ef907ab1cc58f39b5c4e69630040040aea03879cd33255627",
+      "local_sha256": "7bca6b478b996c71120b8e513a14a3a2553a22153e65209b24fef82335b109a3"
+    },
+    {
+      "path": "src/sync/private_inc/player_sync.h",
+      "source_sha256": "9e5800d61cd8d26c8b97705ed320b5c7bdf9ad930b815c215268c8046c871c33",
+      "local_sha256": "5d6f03c15baee6a8e86013e23465a7f05d0654b8a808eae4e5b7a3a42a22b95c"
+    },
+    {
+      "path": "src/video/player_ports_video.c",
+      "source_sha256": "d41c4d2c9bf17d3d9c3264b880afc340607e16cc5eb607c9cc7f75f6c23b4906",
+      "local_sha256": "f59c446d2a44bb311e26c7c477e12ddb3c1a4cc9752841d8f01d97159ec2229c"
+    },
+    {
+      "path": "src/utils/player_url.c",
+      "source_sha256": "ad175ce51ff20dd6b7426aaedd1abd570328df6fbecdd038899e3539d06cb52f",
+      "local_sha256": "e1da4f832bc73826bed15963c24cba940c87b3abca6290afdbab9d8a6e2a6e62"
+    },
+    {
+      "path": "include/esp_player_advance.h",
+      "source_sha256": "5dccf3d885affb8744677e6dc632f9dcbdb7dee1bda9df1d6f98993c26444c30",
+      "local_sha256": "77074cf2634dce9a1bf1e35711edc02ef50c8ceedb5c7de67c2946cd11fb5adf"
+    },
+    {
+      "path": "src/pipeline/player_pipe_events.c",
+      "source_sha256": "3deaa503dcd4087ecc50db942150b9e74282a43b6d404e9765db886d76b63775",
+      "local_sha256": "ff0b425dc638aab300083e1cdd84c7cf9e528107ce7a02d7c966eefe028dec49"
+    },
+    {
+      "path": "src/video/player_pipeline_video.c",
+      "source_sha256": "a1035c63b356bb7e8de3fe0ad9be3d4749e58e1b40ccfa6393e2481113b57a17",
+      "local_sha256": "a1e66407c18269760c2a70585dd823f93aad7764bc9aa413f1be4bfd2d6ca3a4"
+    },
+    {
+      "path": "src/video/player_pipe_events_video.c",
+      "source_sha256": "8fdcdfdbca419324abe9b465e35990706ee92b3c700c5d7beaab1724910f207c",
+      "local_sha256": "15729eec178f239577107bfd8e9ec52348c83e8166e8b66f49df5bc32b750218"
+    },
+    {
+      "path": "src/extractor/player_extractor_io.c",
+      "source_sha256": "8ca8270af4fefe18874f8f6fdc74a8181f2576e059a57ad6d7bd85e97917371d",
+      "local_sha256": "787069d37ac857413064fbd004d7ccd8b886b39e7e5a6625883a00fc3142e06c"
+    },
+    {
+      "path": "src/extractor/private_inc/player_extractor.h",
+      "source_sha256": "ff5b6ec4f8618e44c08f5841f6e55297001578f8af0e1a2a2fa04b562b179517",
+      "local_sha256": "b4673d190e34328d1a197b6bec10ad9ce01516533994221c19a0f7d9d8419b84"
+    },
+    {
+      "path": "src/pipeline/player_pipeline.c",
+      "source_sha256": "28bb5ec9e08fa3c14472682adca96210c07d6daa2ce4dfe42707ba3999d398c7",
+      "local_sha256": "49016d99f4d109fee281b6006c39d18447f5840037b536c2350f74076150d70a"
+    },
+    {
+      "path": "src/extractor/private_inc/player_extractor_io.h",
+      "source_sha256": "de4a0edda50a20664a7a7940e63d3f7a8790d1e6287dc6b846aa87dab8284202",
+      "local_sha256": "ff470b460a410d02793502f57f845257f8df74bf26732c53dd4e9e1e3f846f28"
+    }
+  ],
+  "audio_chunk_validation": {
+    "xtensa_syntax_check": "passed",
+    "full_firmware_build": "pending",
+    "device_ab_test": "pending"
+  },
+  "added_files": [
+    "src/sync/private_inc/hosino_mjpeg_clock.h",
+    "include/hosino_player_diagnostics.h",
+    "include/hosino_mjpeg_metadata.h",
+    "include/hosino_flv_startup.h"
+  ],
+  "added_file_hashes": [
+    {
+      "path": "src/sync/private_inc/hosino_mjpeg_clock.h",
+      "local_sha256": "9d5773ad9eff0dc6b9c2a6a311a352d524314aaba57537271af16ea43edb31b4"
+    },
+    {
+      "path": "include/hosino_player_diagnostics.h",
+      "local_sha256": "c49041f141f8f36106288dc34dfdfa16c02f36370693d7a3c1239baa72c59ea1"
+    },
+    {
+      "path": "include/hosino_mjpeg_metadata.h",
+      "local_sha256": "4fb32d98a19dd7ef21dd1700b21a90f118975e5ac0fcab704a37f124795b4cbe"
+    },
+    {
+      "path": "include/hosino_flv_startup.h",
+      "local_sha256": "a6cc830448208e31a5c3e102781e5d9a55c1f82be932840ffa0d59b529953e9a"
+    }
+  ],
+  "v10_validation": {
+    "xtensa_syntax_check": "passed: player_ports_video.c, player_extractor.c, player_audio_render.c, player_pipeline_audio.c",
+    "full_firmware_build": "pending",
+    "device_playback_test": "pending"
+  },
+  "v11_validation": {
+    "host_tests": "passed: production clock helper and complete production player_sync.c with deterministic clock/RTOS stubs",
+    "host_test_evidence": "tests/mjpeg_clock/validation.json",
+    "host_test_evidence_sha256": "c622eda229e999c0b9f0173712ab40f9fa5dbd714db6ab3d3eb95a91cc6dd73a",
+    "xtensa_syntax_check": "passed: player_sync.c, player_audio_render.c, player_ports_video.c",
+    "full_firmware_build": "pending",
+    "device_playback_test": "pending",
+    "limitations": "Host tests do not model cross-core scheduling, hardware audio latency or audible playback; successful output means renderer-accepted PCM, not hardware played-sample clock."
+  },
+  "v11a_validation": {
+    "host_tests": "passed: production helper and complete player_sync.c; track FPS23 with no generic FPS setup, zero-FPS fallback and pre-reset diagnostics added",
+    "host_test_evidence": "tests/mjpeg_clock/validation.json",
+    "host_test_evidence_sha256": "c21eb2c3c69ecde8b2e32ac0a39224e24130ea43cf4042a30d98abc70ddfdccd",
+    "xtensa_syntax_check": "passed: player_sync.c, player_ports_video.c, real Xtensa compiler and current project flags; no warnings",
+    "full_firmware_build": "pending",
+    "device_start_seek_test": "pending",
+    "clock_behavior": "No PTS normalization or offset correction; initial audio/video offset remains a hypothesis pending real clock snapshots."
+  },
+  "v23_managed_flv_geometry_validation": {
+    "scope": "Explicit selected managed bridge profile fills only zero MJPEG extractor dimensions/FPS; conflicting nonzero geometry rejected; actual decoder geometry checked before block allocation; ordinary sources unchanged",
+    "host_test": "passed: production metadata guards, exact profile isolation and aligned real-output bounds",
+    "host_test_source": "overlay-apps/components/hosino_media_player/tests/test_managed_geometry.c",
+    "xtensa_syntax_check": "passed: four C and four C++/icon/adapter units; actual project flags",
+    "full_firmware_build": "pending parent build result",
+    "device_playback": "pending; prior image rejected managed FLV at custom video factory"
+  },
+  "v23_managed_flv_startup_validation": {
+    "scope": "Only explicit managed HTTPS exact profile and FLV AV source; prime both MJPG and PCM22050/16/mono before one-shot selected track notification; retain original packet order/PTS",
+    "host_tests": "passed: actual production helper, pinned extractor headers, refcounted native-boundary fake; video-first/audio-first, count/bytes/deadline/cancel/error/format limits, replay and local ownership cleanup",
+    "xtensa_syntax_check": "passed: player_extractor.c and player_extractor_io.c with actual project flags, no warnings",
+    "evidence": "evidence/bili-managed-flv-startup-20261114/validation.json",
+    "full_firmware_build": "pending parent build result",
+    "device_playback": "pending; previous geometry firmware decoded video but never selected audio track"
+  },
+  "v23_managed_flv_forward_only_validation": {
+    "scope": "Only managed HTTP extractor omits input byte-seek callback and uses documented native forward-read/discard behavior; no HTTP policy, native format autodetect, local source, codec, bitrate, task or board changes",
+    "source_guard": "passed: verbatim actual production extractor initializer executed for managed and ordinary source flags; HTTP seek rejection and pinned contract checked",
+    "xtensa_syntax_check": "passed: complete player_pipeline.c with current project flags, no warnings",
+    "evidence": "evidence/bili-managed-flv-forward-only-20261114/validation.json",
+    "full_firmware_build": "pending parent build result",
+    "device_playback": "pending new firmware; prior real priming image selected both tracks but GMF cache-miss forward byte seek shut down TLS",
+    "superseded_by": "v23_managed_input_callback_validation: NULL-seek fallback proved to leak positive skip counts as frame status"
+  },
+  "v23_managed_input_callback_validation": {
+    "scope": "Managed-only bounded forward-consuming seek callback normalizes success to zero, compares IO consumer cursor, rejects backward/out-of-budget skips, and never invokes GMF byte seek or HTTP reopen. Managed native reads are exact except real EOS; local input unchanged.",
+    "host": "passed: verbatim production helpers, deterministic GMF/native-boundary model, real captured FLV first-video tail and next PCM tag, temporary 300ms gap, cumulative read/skip deadlines, startup limits, cancellation/error/true EOS; old ordinary IO and initializer guards passed",
+    "xtensa": "passed: actual project flags for player_extractor_io.c and player_pipeline.c with new header declaration, exit0 and zero warnings",
+    "evidence": "evidence/bili-managed-input-fix-20261115/validation.json",
+    "full_build": "pending parent build",
+    "device_playback": "pending new firmware"
+  }
+}

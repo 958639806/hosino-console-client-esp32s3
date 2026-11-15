@@ -1,0 +1,6 @@
+# Keep NVS and PHY at their existing addresses; use previously unallocated
+# flash for the expanded application. Board flash capacity is 16 MiB.
+# Name, Type, SubType, Offset, Size, Flags
+nvs, data, nvs, 0x9000, 0x6000,
+phy_init, data, phy, 0xf000, 0x1000,
+factory, app, factory, 0x10000, 8M,

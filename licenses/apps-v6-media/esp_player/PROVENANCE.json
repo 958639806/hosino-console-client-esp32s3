@@ -1,0 +1,18 @@
+{
+  "component": "espressif/esp_player",
+  "version": "1.1.1",
+  "component_hash": "231d338eb342621cf8ab10db974fabb36492b05121b2adf5e6559744c54ae2da",
+  "component_content_verified": true,
+  "registry_version_url": "https://components.espressif.com/components/espressif/esp_player/versions/1.1.1",
+  "source_repository": "git://github.com/espressif/esp-gmf.git",
+  "repository_info": {
+    "commit_sha": "255fb531ddc97ff5e1e113dad97c88f70d6297be",
+    "path": "./packages/esp_player"
+  },
+  "upstream_url": "https://github.com/espressif/esp-gmf/tree/main/packages/esp_player",
+  "license_sha256": "6dd6708f1cded8fe1ac25842572b29a89c260ec3f6b3269e177c87797f8a7338",
+  "manifest_sha256": "59d0a7d170f6befbfede916b738f3ed887757d1009c0494cd55c49af3c715cd8",
+  "firmware_dependency_lock": "firmware/apps/80mhz/dependencies.lock",
+  "firmware_dependency_lock_sha256": "926d9d87d5a50d54c8abe46c221328ebc23cc20a98750ef7a7ed449fb749f0f7",
+  "original_registry_download_receipt": "REGISTRY_SOURCE.json"
+}

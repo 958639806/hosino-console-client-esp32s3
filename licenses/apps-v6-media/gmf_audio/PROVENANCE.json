@@ -1,0 +1,18 @@
+{
+  "component": "espressif/gmf_audio",
+  "version": "1.1.0",
+  "component_hash": "741274c26ada50260c31c6c3019092f3518de44c79ce49d43da52a27b20ec7a9",
+  "component_content_verified": true,
+  "registry_version_url": "https://components.espressif.com/components/espressif/gmf_audio/versions/1.1.0",
+  "source_repository": "git://github.com/espressif/esp-gmf.git",
+  "repository_info": {
+    "commit_sha": "17ce627cd547d94acfc14890807dbccdc8b459c6",
+    "path": "./elements/gmf_audio"
+  },
+  "upstream_url": "https://github.com/espressif/esp-gmf/tree/main/elements/gmf_audio",
+  "license_sha256": "32395cf1ed0b65a896c6cdd93ba06ea08e5ef2349ea80b155bb1699af61efd30",
+  "manifest_sha256": "fe456be77066c9907592fbaaefddc068875c251de44d9e449222a124e8cf0f1a",
+  "firmware_dependency_lock": "firmware/apps/80mhz/dependencies.lock",
+  "firmware_dependency_lock_sha256": "926d9d87d5a50d54c8abe46c221328ebc23cc20a98750ef7a7ed449fb749f0f7",
+  "original_registry_download_receipt": "REGISTRY_SOURCE.json"
+}
